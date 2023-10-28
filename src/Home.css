@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .App {
+    background-color: red;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: "exerciseListDiv exerciseListDiv" 14%
+                    "filters characteristics" 14%
+                    "addExercise addExercise" 14%
+                    "exercisesSaved exercisesSaved" 44%
+                    "start start" 14% / 50vw 50vw;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* start div #exerciseListDiv */
+  
+  #exerciseListDiv {
+    background-color: rgb(214, 93, 93);
+    grid-area: exerciseListDiv;
+  }
+  
+  /* end div #exerciseListDiv */
+  
+  /* start div #filters */
+  
+  #filters {
+    background-color: rgb(175, 87, 87);
+    width: 25vw;
+    height: 7vh;
+    grid-area: filters;
+  }
+  
+  
+  /* end div #filters */
+  
+  #filtersPopUp {
+    background-color: blue;
+    display: none;
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .open {
+    display: block !important;
+  }
+  
+  #filtersPopUp>header {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  #filtersPopUp>header>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    font-size: 250%;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    border-radius: 100%;
+    border: none;
+    background: none;
+    margin: 5px;
+  }
+  
+  #filtersPopUp>header>button:hover {
+    background-color: blanchedalmond;
+    cursor: pointer;
+  }
+  
+  
+  #filtersPopUp>main>div {
+    background-color: aqua;
+    margin: 5px 0px;
+  }
+  
+  
+  #filtersPopUp>main>div>select {
+    height: 5vh;
+    width: 15vw;
+    font-size: 90%;
+    margin: 0px 10%;
+  }
+  
+  #filtersPopUp>main>footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  #filtersPopUp>main>footer>button {
+    height: 50px;
+    width: 100%;
+  }
+  
+  /* start div #characteristics */
+  
+  #characteristics {
+    background-color: rgb(175, 87, 87);
+    width: 25vw;
+    height: 7vh;
+    grid-area: characteristics;
+  }
+  
+  /* end div #characteristics */
+  
+  /* start div #addExercise */
+  
+  #addExercise {
+    background-color: rgb(175, 87, 87);
+    width: 80vw;
+    height: 10vh;
+    grid-area: addExercise;
+  }
+  
+  /* end div #addExercise */
+  
+  /* start div #exercisesSaved */
+  
+  #exercisesSaved {
+    background-color: rgb(175, 87, 87);
+    width: 80vw;
+    height: 40vh;
+    grid-area: exercisesSaved;
+    overflow-y: auto;
+  }
+  
+  /* end div #exercisesSaved */
+  
+  /* start div #start */
+  
+  #start {
+    background-color: rgb(175, 87, 87);
+    width: 80vw;
+    height: 10vh;
+    grid-area: start;
+  }
+  
+  /* end div #start */
+  
+  
+  #labelExList {
+    margin-right: 0.5vw;
+  }
+  
+  .choosenExList {
+    margin: 0px;
+  }
+  
+  .divs {
+    margin: 2vh 0vw;
+  }
+  
+  
